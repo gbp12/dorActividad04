@@ -10,11 +10,11 @@
     <header>
       <div id="logo">TODOFP</div>
       <nav>
-        <div class="navElement">elemento</div>
-        <div class="navElement">elemento</div>
-        <div class="navElement">elemento</div>
-        <div class="navElement">elemento</div>
-        <div class="navElement">elemento</div>
+        <div class="navElement selected">Inicio</div>
+        <div class="navElement">Informacion</div>
+        <div class="navElement">Cursos</div>
+        <div class="navElement">Alumnos</div>
+        <div class="navElement">Ayuda</div>
       </nav>
     </header>
     <main>
@@ -26,13 +26,16 @@
           <label>Contraseña</label>
           <input type="password" name="password" id="password" />
           <button type="submit">Acceder</button>
+          <div style="margin-top: 10px">
+            <a href="#">Olvidaste la Contraseña? </a>
+          </div>
         </form>
-        <div class="subTitle">UNIDADES DE TRABAJO</div>
-        <div class="unidad">unidad</div>
-        <div class="unidad">unidad</div>
-        <div class="unidad">unidad</div>
-        <div class="unidad">unidad</div>
-        <div class="unidad">unidad</div>
+        <div id="unidades" class="subTitle">UNIDADES DE TRABAJO</div>
+        <div class="unidad">DIW01, 2011</div>
+        <div class="unidad">DIW02, 2011</div>
+        <div class="unidad">DIW03, 2011</div>
+        <div class="unidad">DIW04, 2011</div>
+        <div class="unidad">DIW05, 2011</div>
       </div>
       <div id="col2" class="columna">
         <div class="subTitle">BIENVENIDO A TODOFP</div>
@@ -50,13 +53,13 @@
       </div>
       <div id="col3" class="columna">
         <div class="subTitle">WEBS DE INTERES</div>
-        <ul>
-          <li><a href="#"> TodoFP </a></li>
-          <li><a href="#">FP online</a></li>
-          <li><a href="#">Platega</a></li>
-          <li><a href="#">IES San Clemente</a></li>
-          <div id="lateralImg"></div>
+        <ul style="background-color: red">
+          <li class="webs"><a href="#"> TodoFP </a></li>
+          <li class="webs"><a href="#">FP online</a></li>
+          <li class="webs"><a href="#">Platega</a></li>
+          <li class="webs"><a href="#">IES San Clemente</a></li>
         </ul>
+        <div id="lateralImg"></div>
       </div>
     </main>
     <footer>
