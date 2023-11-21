@@ -18,7 +18,8 @@ header {
   background: linear-gradient(to bottom, #69dd45, #f5f5f5);
 }
 #logo {
-  background-color: blue;
+  font-size: 20px;
+  font-weight: bold;
 }
 nav {
   display: flex;
@@ -35,6 +36,11 @@ nav {
   width: 80px;
   text-align: center;
   font-size: 14px;
+  cursor: pointer;
+}
+
+.navElement:hover {
+  background-color: #e58c24;
 }
 .navElement.selected {
   background-color: #e58c24;
@@ -71,7 +77,8 @@ main {
   align-items: center;
 }
 .webs {
-  font: 2px;
+  font-size: 13px;
+  margin-bottom: 5px;
   /*TODO: reducir el tamanio de esta clase*/
 }
 footer {
@@ -84,9 +91,19 @@ footer {
   width: 100%;
   color: #f5f5f5;
   padding: 9px 10px;
+  display: flex;
+}
+.subTitle > .fecha {
+  font-size: 10px;
+  right: 0;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 #lateralImg {
-  background-color: blueviolet;
+  background-color: rgb(184, 184, 184);
+  border: 2px solid #000;
   width: 60%;
   height: 100%;
 }
@@ -97,6 +114,22 @@ a {
 
 #unidades {
   margin-top: 50px;
+}
+#welcome {
+  text-align: justify;
+}
+#gatito {
+  float: left;
+  max-width: 140px;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+#linea {
+  padding-top: 10px;
+  font-size: 10px;
+  border-top: 2px dotted #a1a1a1; /* 1px de grosor, línea de puntos, color negro */
+  width: 100%; /* Puedes ajustar esto según tus necesidades */
+  margin: 20px 0; /* Puedes ajustar el margen según tus necesidades */
 }
 
 @media (max-width: 780px) {
@@ -112,13 +145,25 @@ a {
   }
   .columna {
     width: 100%;
-    background-color: blue;
     max-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   #col1 {
     display: flex;
-    background-color: red;
-    width: 100%;
+    width: 90%;
+    max-width: none;
+  }
+  #col2 {
+    display: flex;
+    width: 90%;
+    max-width: none;
+  }
+  #col3 {
+    display: flex;
+    align-items: center;
+    width: 90%;
     max-width: none;
   }
   form {
@@ -134,6 +179,14 @@ a {
   input {
     max-width: 300px;
     width: 90%;
+  }
+  footer {
+    display: none;
+  }
+  #websList {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
